@@ -34,7 +34,7 @@
             height: auto;
             position: absolute;
             top: -10px;
-            left: -3px;
+            left: 3px;
             z-index: 1;
         }
     
@@ -43,7 +43,7 @@
             display: block;
             margin: auto;
             margin-top: 50px;
-            width: 180px;
+            width: 200px;
             height: auto;
             border-radius: 50%;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.342);
@@ -52,24 +52,24 @@
         #titulo {
             display: block;
             margin: auto;
-            margin-top: 20px;
-            margin-bottom: 30px;
-            width: 250px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            width: 280px;
         }
 
         #container {
             margin: auto;
-            width: 250px; 
+            width: 300px; 
         }
 
         .links {
             display: block;
-            margin-bottom: 15px;
-            padding: 2px;
+            margin-bottom: 18px;
+            padding: 5px;
             text-decoration: none;
             text-align: center;
             font-family: Lemon;
-            font-size: 1.4em;
+            font-size: 1.5em;
             color: #EBEBEB;
             background-color: #F9839E;
             border-radius: 15px;
@@ -91,11 +91,16 @@
             }
         }
 
-        .links:hover {
+        .links:hover .links:focus {
             background-color: #ffafc0;
             outline: 0.5px solid white;
             text-decoration: underline;
             outline-offset: 1px;       
+        }
+
+        .links:active {
+            background-color: #e899a2; /* Cor de fundo enquanto o link é pressionado */
+            outline: 0.5px solid white;
         }
 
     </style>
