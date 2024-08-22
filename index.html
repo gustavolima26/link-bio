@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Bio</title>
+    <style>
+        @font-face {
+            font-family: Lemon;
+            src: url(fontes/LemonYellowSunExtraBold-Regular.ttf) format(truetype);
+        }
+        
+        * {
+            margin: 0px;
+        }
+
+        body {
+            background-color: #EBEBEB;
+            background-image: url(imagens/imagem-de-fundo/Fundo\ novo.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .imagens {
+            position: relative;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        #borboleta {
+            width: 45px;
+            height: auto;
+            position: absolute;
+            top: -10px;
+            left: -3px;
+            z-index: 1;
+        }
+    
+        #foto-perfil {
+            position: relative;
+            display: block;
+            margin: auto;
+            margin-top: 50px;
+            width: 180px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.342);
+        }
+
+        #titulo {
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            width: 250px;
+        }
+
+        #container {
+            margin: auto;
+            width: 250px; 
+        }
+
+        .links {
+            display: block;
+            margin-bottom: 15px;
+            padding: 2px;
+            text-decoration: none;
+            text-align: center;
+            font-family: Lemon;
+            font-size: 1.4em;
+            color: #EBEBEB;
+            background-color: #F9839E;
+            border-radius: 15px;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.233);
+            outline: 2px solid transparent;
+            outline-offset: 0;
+            transition: outline-offset 0.3s ease, outline-color 0.3s ease;
+            animation: slideLeft 1.2s ease-out;
+        }
+
+        @keyframes slideLeft {
+            from {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .links:hover {
+            background-color: #ffafc0;
+            outline: 0.5px solid white;
+            text-decoration: underline;
+            outline-offset: 1px;       
+        }
+
+    </style>
+</head>
+<body>
+    <div class="imagens">
+        <img src="imagens/borboleta.png" alt="borboleta" id="borboleta">
+        <img src="imagens/foto-perfil.png" alt="foto-perfil" id="foto-perfil">
+    </div>
+    <div>
+        <img src="imagens/titulo.png" alt="titulo"  id="titulo">
+    </div>
+    <div id="container">
+        <a href="https://api.whatsapp.com/send?phone=5548999136915" target="_blank" class="links">WhatsApp</a>
+        <a href="https://drive.google.com/file/d/1VdPmIoLXkmH_kTOudNvUeOF0Q9Y_6epx/view?usp=drivesdk" target="_blank" class="links">Catálogo</a>
+        <a href="https://www.elo7.com.br/milenathamirespersonalizados" target="_blank" class="links">Elo 7</a>
+        <a href="https://www.google.com/search?q=Milena+Thamires+Personalizados&sca_esv=818531cebf5596c8&hl=pt-BR&sxsrf=ADLYWIKJORlJ-seqZ9tMOP2vpbGoGPXoEw%3A1724290747802&ei=u5bGZt-9MOHS1sQPusDV-Ac&ved=0ahUKEwifh4zMu4eIAxVhqZUCHTpgFX8Q4dUDCA8&uact=5&oq=Milena+Thamires+Personalizados&gs_lp=Egxnd3Mtd2l6LXNlcnAiHk1pbGVuYSBUaGFtaXJlcyBQZXJzb25hbGl6YWRvczIEECMYJzIEECMYJzIEECMYJzICECYyCBAAGIAEGKIEMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBEjUA1AAWABwAHgAkAEAmAF3oAF3qgEDMC4xuAEDyAEA-AEBmAIBoAJ-mAMAkgcDMC4xoAfLCg&sclient=gws-wiz-serp" class="links" target="_blank">Nos avalie no Google</a>
+    </div>
+</body>
+</html>
